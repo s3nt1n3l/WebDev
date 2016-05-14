@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+body  {
+/* it's good practice to zero the margin and padding of the body element to override different browser defaults if you are not using reset CSS */
+	margin: 0; 
+	padding: 0;
+	color: #333;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 100%;
+	background-color: #FFF;
+	background: url(images/stripe.png) fixed top right no-repeat, 
+	url(images/img_2679.png) repeat-x;
+}
+/*HTML5 elements that are inline by default, declared as block*/
+article, aside, main, nav, footer, small, figcaption {
+	display:block;
+}
+#wrapper {
+	width: 96%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+} 
+main {
+	float: right;
+	width: 65%;
+	border-left: 1px groove #8080C0;
+	margin-top: -20px;
+	padding: 0 10px 10px 10px;
+}  
+#sidebar {
+    width: 28%;
+    max-width: 280px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    margin: 0 1% 0 1%;
+    padding-top: 40px;
+}
+
+nav	{
+	border-left: 10px groove #8080C0;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+footer {
+width: 100%;
+position: fixed;
+left: 0px;
+bottom: 0px;
+z-index: 10;
+background-color: #8080C0;
+padding: 10px 0 6px 10px;
+background-clip: padding-box;  /*  browsers with full support */
+} 
+h1	{
+	font-family: 'Fontdiner Swanky', cursive;
+	font-size: 400%;
+	color: #E34C26;
+	text-shadow: 3px 3px 2px #666;
+	}
+h2, h3	{
+	color: #666;
+	}
+ul	{
+	display: block;
+	list-style-type: none;
+	margin-left: -40px;
+}
+figcaption	{
+    text-align: center;
+    font-size: 80%;
+    font-style: italic;
+    background-color: #E34C26;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 3px #666;
+}
+small	{
+	padding-top: 6px;
+}
+time	{
+	font-weight: bold;
+}
+/*The following classes are used to float an image to the left or right*/
+.fltlt{
+	float: left;
+	border: none;
+	margin-right: 5px;
+	margin-left: 0;
+}
+.fltrt{
+	float: right;
+	border: none;
+	margin-right: 0;
+	margin-left: 5px;
+}
+.clrflt { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: #E34C26;
+}
+a:hover {
+	color: #8080C0;
+	border-bottom: 1px dotted #00C;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #8080C0;
+}
+

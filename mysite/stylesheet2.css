@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+/*getting started stylesheet*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+The reset CSS overrides all the style rules applied by the browser stylesheet.
+If you don't want to reset all CSS values then comment the reset rules out----*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 0;
+}
+/*end of reset style rules---------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*START YOUR STYLSESHEET RULES HERE*/
+/*default rule for all elements*/
+body {
+background-image:url(images/backgroundimg.png);
+background-color: #E05151;
+color: #000000;
+font-size: 0.9em;
+line-height: 1.2em;
+}
+/*page section elements-----------------------------------------------------*/
+#wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #333333;
+  padding: 0 1em 0 1em;
+  max-width: 1000px;
+  min-width: 300px;
+}
+.menu	{
+	margin: 10px 0 14px 0;
+	border-bottom: 5px dotted #75A3D1;
+	border-top: 5px dotted #75A3D1;
+	padding: 1em 0 1em 0;
+	color: #E05151;
+}
+.banner{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+/*Defines the style for the main page content*/
+
+main	{
+	float: right;
+	width: 68%;
+	margin-bottom: 1em;
+    padding-left: 3%;
+    border-left: 3px dashed #75A3D1;
+
+}
+nav	{
+}
+.sidebar {
+	float: left;
+	width: 20%;
+	padding-left: 5%;
+}
+.clear {
+	clear:both;
+}
+aside	{
+}
+article	{
+	margin-right: 2em;
+	padding: 1em 1em 1em 0;
+}
+
+/* Defines the style for the footer at the bottom of the page */
+footer{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.bottom {z
+	text-align: center;
+	clear: both;
+	border-top: 5px dotted #75A3D1;
+}
+p	{
+  	font-family: Georgia, "Times New Roman", Times, serif;
+  	color: #FFD452;
+	line-height: 1.2em;
+	margin-top: 1.1em;
+}
+blockquote	{
+	margin-left: 30px;
+	border-left-width: 3px;
+	border-left-style: dotted;
+	border-left-color: #CCC;
+	padding-left: 15px;
+}
+/*headings----------------------------------------------------------------------*/
+h1	{
+font-family: 'Sigmar One', cursive;
+  color: #E05151;
+  font-size: 36px;
+  line-height: 50px;
+    font-weight:400;
+}
+h2	{
+    font-family: 'Sigmar One', cursive;
+	font-size: 24px;
+	line-height: 35px;
+	color: #FFFFFF;
+}
+h3 	{
+    font-family: 'Sigmar One', cursive;
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 30px;
+}
+/*grouping elements--------------------------------------------------------------*/
+.date {
+color: #333;
+}
+
+/*lists--------------------------------------------------------------------------*/
+ol	{
+}
+.navigation{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+ul	{
+    color:#E05151;
+    font-weight: bold;
+	list-style-type: disc;
+	line-height: 16px;
+}
+li	{
+	margin-left: 1.2em;
+	line-height: 20px;
+}
+dl	{
+	color: #E05151;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+dt	{
+    font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+    color:#FFFFFF;
+}
+dd	{
+font-family: 'Roboto', sans-serif;
+    color: #E05151;
+	text-indent: 10px;
+}
+.menu li {
+		display: inline;
+  		list-style-type: none;
+  		font-size: 18px;
+  		margin-left: 0px;
+	}
+/*text elements-------------------------------------------------------------------*/
+small	{
+	font-size: 0.8em;
+	line-height: 15px;
+	color: #FFFFFF;
+}
+.post	{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: #6E6E6E;
+}
+.figCaption {
+	color: #FFFFFF;
+}
+/*tables----------------------------------------------------------------*/
+table	{
+}
+	caption{
+    font-family: 'Sigmar One', cursive;
+	color: #FFFFFF;
+	font-size:2em;
+	line-height:1.2em;
+	padding-bottom:0.2em;
+}
+th	{
+	color: #004080;
+	background-color: #FFFFDC;
+	letter-spacing: 0.1em;
+	padding: 5px 8px 5px 8px;
+	border: 1px solid #333333;
+}
+thead th {
+    font-family: 'Roboto', sans-serif;
+	color: #333;
+	background-color: #DEDEDE;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-right: 1px solid #333333;
+	border-left: 1px solid #333333;
+	padding: 5px 8px 5px 8px;
+	border-radius: 6px 6px 0 0;
+}
+thead th:first-child {
+border-left: #333333;
+}
+thead th:last-child {
+border-right: #333333;
+}
+td	{
+    font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+	border: 1px solid #E05151;
+	padding: 2px;
+	text-align: center;
+	background-color: #333333;
+}
+td:empty {
+background-image:url(images/stripe2.png);
+}
+
+/*embedded elements----------------------------------------------------------------*/
+img	{
+	margin: 0.5em;
+	border: 1px solid #CCC;
+}
+.floatImg {
+	float:right;
+	margin-right: 8px;
+}
+.floatImg {
+	float: left;
+	margin-right: 8px;
+}
+/*anchors-------------------------------------------------------------------------*/
+a:link	{
+	color: #FFD452;
+	text-decoration: none;
+}
+a:visited {
+	color: #B541B5;
+	text-decoration: none;
+}
+a:hover {
+    color: #0063A6;
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #0063A6;
+}
+a:active {
+	color: #DB1414;
+	text-decoration: none;
+}
+.menu a {
+  	color: #333333;
+  	background-color: #E05151;
+ 	padding-top: 2px;
+  	padding-right: 5px;
+  	padding-bottom: 2px;
+  	padding-left: 5px;
+  	margin-right: 4px;
+  	text-decoration: none;
+}
+	
+.menu a:hover {
+  	background-color: #6EC2E5;
+  	color: #FFFFFF;
+} 
